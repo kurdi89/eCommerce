@@ -39,6 +39,8 @@ from orders.views import LibraryView
 
 from .views import home_page, about_page, contact_page
 
+app_name = 'ecommerce'
+
 urlpatterns = [
     url(r'^$', home_page, name='home'),
     url(r'^about/$', about_page, name='about'),

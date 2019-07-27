@@ -6,6 +6,9 @@ from .views import (
         VerifyOwnership
         )
 
+app_name = 'orders'
+
+
 urlpatterns = [
     url(r'^$', OrderListView.as_view(), name='list'),
     url(r'^endpoint/verify/ownership/$', VerifyOwnership.as_view(), name='verify-ownership'),

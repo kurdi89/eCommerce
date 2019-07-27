@@ -1,11 +1,15 @@
 from django.conf.urls import url
 
+
 from .views import (
         cart_home, 
         cart_update, 
         checkout_home,
         checkout_done_view
         )
+
+app_name = 'carts'
+
 
 urlpatterns = [
     url(r'^$', cart_home, name='home'),
